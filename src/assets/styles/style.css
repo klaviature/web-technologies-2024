@@ -9,3 +9,89 @@
 .test {
     color: red !important;
 }
+
+.base_paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.base_h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.base_h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.base_h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.base_h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.base_input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.base_textarea {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.submit_button {
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: linear-gradient(to right, #a6c5ff, #7d9bff);
+    border: 0px;
+}
+
+.nav ul {
+    overflow: hidden;
+    padding: 0;
+    background: linear-gradient(to top, #923fff, #F3F6F6 );
+}
+
+.nav ul li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    border-radius: 0px 32px 32px 0;
+    padding: 16px;
+    box-shadow: -2px 0 2px #FFFFFF inset, 2px 0 2px #000000;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contacts_form {
+    background-image: url('../img/image1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    border-radius: 8px;
+}

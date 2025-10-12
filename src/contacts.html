@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="assets/icons/kotlin_logo.svg" alt="kotlin_logo" width="350">
-            </div>
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li>
-                            <a href="contacts.html">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <h1>Свяжитесь с нами</h1>
-        <p>
-            Мы всегда на связи
-        </p>
-        <img src="assets/img/image1.png" width="350">
-        <h4>Адрес</h4>
-        <p>
-            г.Тюмень, ул.Республики, д.9
-        </p>
-        <h4>Телефон</h4>
-        <ul>
-            <li>+7 (777) 777-77-77</li>
-            <li>+6 (666) 666-66-66</li>
-        </ul>
-        <h4>Онлайн сервисы</h4>
-        <ul>
-            <li>
-                <a href="">Сайт</a>
-            </li>
-            <li>
-                <a type="email" href="kotlin@kotlin.com">Почта</a>
-            </li>
-        </ul>
-        <h4>Сообщите нам</h4>
-        <form action="" method="post">
-            <label for="full-name">ФИО</label><br>
-            <input type="text" id="full-name" name="full-name"/><br>
+<head>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/icons/kotlin_logo.svg" alt="kotlin_logo" width="350">
+        </div>
+        <div>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="base_h1">Свяжитесь с нами</h1>
+    <p class="base_paragraph">
+        Мы всегда на связи
+    </p>
+    <img src="assets/img/image1.png" width="350">
+    <h4 class="base_h4">Адрес</h4>
+    <p class="base_paragraph">
+        г.Тюмень, ул.Республики, д.9
+    </p>
+    <h4 class="base_h4">Телефон</h4>
+    <ul>
+        <li>+7 (777) 777-77-77</li>
+        <li>+6 (666) 666-66-66</li>
+    </ul>
+    <h4 class="base_h4">Онлайн сервисы</h4>
+    <ul>
+        <li>
+            <a href="">Сайт</a>
+        </li>
+        <li>
+            <a type="email" href="kotlin@kotlin.com">Почта</a>
+        </li>
+    </ul>
+    <h4>Сообщите нам</h4>
+    <form  class="contacts_form" action="" method="post">
+        <label for="full-name">ФИО</label><br>
+        <input class="base_input" type="text" id="full-name" name="full-name" /><br>
 
-            <label for="email">Почта</label><br>
-            <input type="emial" id="email" name="email"/><br>
+        <label for="email">Почта</label><br>
+        <input class="base_input" type="emial" id="email" name="email" /><br>
 
-            <label for="message">Сообщение</label><br>
-            <textarea id="message" name="message" rows="5" cols="30"></textarea><br>
+        <label for="message">Сообщение</label><br>
+        <textarea class="base_textarea" id="message" name="message" rows="5" cols="30"></textarea><br>
 
-            <button type="submit">Отправить</button>
-        </form>
+        <button class="submit_button" type="submit">Отправить</button>
+    </form>
+    <hr>
+    <footer>
+        <h3>Наши контакты</h3>
+        <p class="base_paragraph">Мы всегда рядом</p>
         <hr>
-        <footer>
-            <h3>Наши контакты</h3>
-            <p>Мы всегда рядом</p>
-            <hr>
-            <ul>
-                <li>Офис поддержки</li>
-                <li>+7 (777) 777-77-77</li>
-                <li>kotlin@kotlin.com</li>
-            </ul>
-            <p>Все права защищены</p>
-        </footer>
-    </body>
+        <ul>
+            <li>Офис поддержки</li>
+            <li>+7 (777) 777-77-77</li>
+            <li>kotlin@kotlin.com</li>
+        </ul>
+        <p class="base_paragraph">Все права защищены</p>
+    </footer>
+</body>
+
 </html>
