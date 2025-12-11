@@ -26,7 +26,7 @@ header.container, footer.container {
     transform: translateX(-50%);
     width: 100%;
     height: 90px;
-    max-width: calc(100% - 24px * 2);
+    max-width: calc(100% - 48px);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
     background-color: #FFFFFF;
     z-index: 2;
@@ -51,7 +51,7 @@ header.container, footer.container {
     right: 35px;
 }
 
-.header__menu-button use {
+.header__menu-button use, .header__close-button use {
     fill: #2D66EE;
 }
 
@@ -104,8 +104,16 @@ h1 {
     z-index: 1;
 }
 
-h2, h2 span {
-    font-family: 'Inter', sans-serif;
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    line-height: 40.32px;
+    letter-spacing: 0.33px;
+    margin: 0;
+}
+
+h2 span {
+    font-family: "Inter", sans-serif;
     font-size: 28px;
     line-height: 40.32px;
     letter-spacing: 0.33px;
@@ -214,7 +222,13 @@ input::placeholder {
     width: 146.55px;
 }
 
-.screenshots__container__inner, .screenshots__container__inner__images {
+.screenshots__container__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.screenshots__container__inner__images {
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -234,13 +248,7 @@ input::placeholder {
     fill: #101828;
 }
 
-.development-cycle__container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.development-cycle {
+.development-cycle__container, .development-cycle {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -290,7 +298,7 @@ input::placeholder {
 }
 
 .development-field ul li:not(:last-child)::after {
-    content: ' /';
+    content: " /";
     color: #2D66EE;
     font-weight: 400;
     font-size: 14px;
@@ -351,7 +359,7 @@ footer.container {
 
 .footer__address {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 1fr 1fr/1fr 1fr;
     gap: 32px;
 }
 
@@ -359,7 +367,7 @@ footer.container {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 154px ;
+    width: 154px;
 }
 
 .address__block__title {
@@ -399,7 +407,7 @@ footer.container {
     color: #FFFFFF;
 }
 
-.address__block__title use {
+.address__block__title use, .internationality use {
     fill: #98A2B3;
 }
 
@@ -439,7 +447,7 @@ header use {
 
 .header__address {
     display: grid;
-    grid-template: auto auto auto / auto auto;
+    grid-template: auto auto auto/auto auto;
     row-gap: 16px;
     column-gap: 8px;
 }
@@ -475,7 +483,7 @@ header use {
     }
 
     .header__container {
-        max-width: calc(100% - 32px * 2);
+        max-width: calc(100% - 64px);
         top: 16px;
     }
 
@@ -488,11 +496,12 @@ header use {
         height: 794px;
     }
 
-    .service__description, .contact-form-wrapper {
+    .service__description {
         max-width: 382px;
     }
 
     .contact-form-wrapper {
+        max-width: 382px;
         top: 374px;
     }
 
@@ -555,7 +564,7 @@ header use {
     }
 
     .header__address {
-        grid-template: auto / 22px auto 22px auto 28px auto;
+        grid-template: auto/22px auto 22px auto 28px auto;
     }
 
     .header__address a:not(:last-child) {
@@ -629,7 +638,7 @@ header use {
 
     .header__address {
         display: grid;
-        grid-template: auto / 22px auto auto 60px auto;
+        grid-template: auto/22px auto auto 60px auto;
         gap: 0;
     }
 
@@ -649,7 +658,12 @@ header use {
         margin-left: 32px;
     }
 
-    h2, h2 span {
+    h2 {
+        font-size: 36px;
+        line-height: 51.84px;
+    }
+
+    h2 span {
         font-size: 36px;
         line-height: 51.84px;
     }
@@ -672,7 +686,7 @@ header use {
 
     .contact-form {
         flex-direction: row;
-        gap: 24px
+        gap: 24px;
     }
 
     .contact-form-wrapper {
@@ -699,7 +713,15 @@ header use {
         width: 310.49px;
     }
 
-    .development-field ul li, .development-field ul li:not(:last-child)::after, .address__block a {
+    .development-field ul li {
+        font-size: 17px;
+    }
+
+    .development-field ul li:not(:last-child)::after {
+        font-size: 17px;
+    }
+
+    .address__block a {
         font-size: 17px;
     }
 
@@ -731,11 +753,7 @@ header use {
         max-width: 132px;
     }
 
-    .watermark {
-        display: unset;
-    }
-
-    .screenshots__container__inner__images:last-child {
+    .watermark, .screenshots__container__inner__images:last-child {
         display: unset;
     }
 }
