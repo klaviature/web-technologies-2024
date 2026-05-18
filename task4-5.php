@@ -1,1 +1,0 @@
-echo "<a href="src/index.php">Посмотреть динамическое меню на src</a>";
